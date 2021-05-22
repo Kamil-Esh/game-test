@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  min-height: 100vh;
+  text-align: center;
+  background: url("../images/1_HEADER_bg.jpg") no-repeat center/cover;
+
+  &__desc {
+    font-size: 24px;
+    font-family: "Lora", sans-serif;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    line-height: 1.5em;
+  }
+}
+
+.info {
+  position: relative;
+  padding-top: 20px;
+  min-height: 100vh;
+  background: url("../images/2_CHARS_bg_Isolda.jpg") no-repeat center/cover;
+
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__img {
+    margin-top: -50px;
+  }
+
+  &__character {
+    padding-left: 45px;
+  }
+
+  &__fraction {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-family: "Lora", sans-serif;
+    color: rgb(255, 50, 58);
+    line-height: 1.333em;
+    text-shadow: 0 5px 30px rgba(35, 27, 32, 0.004);
+    margin-top: -35px;
+    margin-bottom: 25px;
+
+    img {
+      margin-right: 30px;
+    }
+
+    &-lleyn {
+      color: rgb(255, 196, 25);
+    }
+
+    &-pamela {
+      color: rgb(202, 134, 255);
+    }
+  }
+
+  &__desc {
+    font-size: 24px;
+    font-family: "Lora", sans-serif;
+    color: rgb(249, 244, 233);
+    line-height: 1.5em;
+    text-shadow: 0 5px 30px rgba(35, 27, 32, 0.004);
+    max-width: 420px;
+  }
+
+  &__skills {
+    padding-left: 45px;
+    margin-top: 15px;
+
+    &-title {
+      font-size: 24px;
+      font-family: "Lora", sans-serif;
+      color: rgb(249, 244, 233);
+      line-height: 1.5em;
+      font-weight: normal;
+    }
+
+    &-desc {
+      font-size: 16px;
+      font-family: "Lora", sans-serif;
+      color: rgb(188, 190, 193);
+    }
+
+    &-item {
+      display: flex;
+      align-items: start;
+
+      img {
+        margin-right: 25px;
+        object-fit: contain;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .desc {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 65px;
+    font-size: 24px;
+    font-family: "Lora", sans-serif;
+    color: rgb(249, 244, 233);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__scroll-btn {
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.events {
+  min-height: 100vh;
+  text-align: center;
+
+  .fullscreen-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top: 51%;
+  }
+
+  .fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-top: 30px;
+  }
+
+  &__desc {
+    font-size: 18px;
+    font-family: "Lora", sans-serif;
+    color: rgb(249, 244, 233);
+    line-height: 1.5em;
+    margin-bottom: 60px;
+  }
+
+  &__scroll-btn {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 7;
+  }
+
+  .play__btn {
+    text-align: center;
+
+    a {
+    }
+
+    img {
+      object-fit: contain;
+      height: 236px;
+      width: 224px;
+      cursor: pointer;
+    }
+  }
+}
+
+.growth {
+  min-height: 100vh;
+  text-align: center;
+  background: url("../images/4_MOUNT_bg.jpg") no-repeat center/cover;
+
+  &__title {
+    padding-top: 20px;
+  }
+
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 23%;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__box {
+    &-desc {
+      font-size: 24px;
+      font-family: "Lora", sans-serif;
+      color: rgb(255, 196, 25);
+      line-height: 1.167;
+      margin-top: -30px;
+    }
+  }
+
+  &__desc {
+    font-size: 24px;
+    font-family: "Lora", sans-serif;
+    color: rgb(249, 244, 233);
+    line-height: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+.footer {
+  min-height: 100vh;
+  text-align: center;
+  background: url("../images/5_FOOTER_BG.jpg") no-repeat center/cover;
+
+  &__title {
+    padding-top: 20px;
+  }
+
+  &__socials {
+    margin-bottom: 80px;
+
+    &-title {
+      font-size: 24px;
+      font-family: "Lora", sans-serif;
+      color: rgb(249, 244, 233);
+      line-height: 1.125em;
+      margin-bottom: 30px;
+      font-weight: normal;
+    }
+
+    &-icon {
+      height: 83px;
+      width: 91px;
+      display: inline-block;
+    }
+
+    .fb {
+      background: url("../images/5_FOOTER_btn_fb_normal.png") no-repeat center/contain;
+      transition: .4s;
+
+      &:hover {
+        background: url("../images/5_FOOTER_btn_fb_hover.png") no-repeat center/contain;
+      }
+
+      &:active {
+        background: url("../images/5_FOOTER_btn_fb_active.png") no-repeat center/contain;
+      }
+    }
+
+    .vk {
+      background: url("../images/5_FOOTER_btn_vk_normal.png") no-repeat center/contain;
+      transition: .4s;
+
+      &:hover {
+        background: url("../images/5_FOOTER_btn_vk_hover.png") no-repeat center/contain;
+      }
+
+      &:active {
+        background: url("../images/5_FOOTER_btn_vk_active.png") no-repeat center/contain;
+      }
+    }
+
+    .ok {
+      background: url("../images/5_FOOTER_btn_ok_normal.png") no-repeat center/contain;
+      transition: .4s;
+
+      &:hover {
+        background: url("../images/5_FOOTER_btn_ok_hover.png") no-repeat center/contain;
+      }
+
+      &:active {
+        background: url("../images/5_FOOTER_btn_ok_active.png") no-repeat center/contain;
+      }
+    }
+
+    .mail {
+      background: url("../images/5_FOOTER_btn_mail_normal.png") no-repeat center/contain;
+      transition: .4s;
+
+      &:hover {
+        background: url("../images/5_FOOTER_btn_mail_hover.png") no-repeat center/contain;
+      }
+
+      &:active {
+        background: url("../images/5_FOOTER_btn_mail_active.png") no-repeat center/contain;
+      }
+    }
+  }
+
+  &__agreement {
+    font-size: 14px;
+    font-family: "Lora", sans-serif;
+    color: #65625d;
+    line-height: 1.489em;
+    font-weight: 700;
+    margin-bottom: 40px;
+
+    a {
+      text-decoration: underline;
+      color: #7a7673;
+    }
+  }
+}
+
+.btn a {
+  height: 234px;
+  display: inline-block;
+  width: 565px;
+  background: url("../images/BTN_play_normal.png");
+  transition: .4s;
+
+  &:hover {
+    background: url("../images/BTN_play_hover.png");
+  }
+
+  &:active {
+    background: url("../images/BTN_play_active.png");
+  }
+}
+
+.pamela {
+  background: url("../images/2_CHARS_bg_Pamela.jpg") no-repeat center/cover;
+}
+
+.lleyn {
+  background: url("../images/2_CHARS_bg_Lleyn.jpg") no-repeat center/cover;
+}
+
+.slider {
+  position: relative
+}
+.btn-scroll {
+  height: 66px;
+  display: inline-block;
+  width: 102px;
+  background: url("../images/BTN_scroll_normal.png") no-repeat center/contain;
+  transition: .4s;
+  &:hover {
+    background: url("../images/BTN_scroll_hover.png") no-repeat center/contain;
+  }
+  &:active {
+    background: url("../images/BTN_scroll_active.png") no-repeat center/contain;
+  }
+}
+.isolda-icon {
+  height: 139px;
+  width: 140px;
+  transition: .4s;
+  display: inline-block;
+  background: url("../images/2_CHARS_icon_Isolda_inactive.png") no-repeat center/contain;
+  &:hover {
+    background: url("../images/2_CHARS_icon_Isolda_hover.png");
+  }
+}
+.pamela-icon {
+  height: 139px;
+  width: 140px;
+  display: inline-block;
+  transition: .4s;
+  background: url("../images/2_CHARS_icon_Pamela_inactive.png") no-repeat center/contain;
+  &:hover {
+    background: url("../images/2_CHARS_icon_Pamela_hover.png");
+  }
+}
+.lleyn-icon {
+  height: 139px;
+  width: 140px;
+  display: inline-block;
+  transition: .4s;
+  background: url("../images/2_CHARS_icon_LLeyn_inactive.png") no-repeat center/contain;
+  &:hover {
+    background: url("../images/2_CHARS_icon_Lleyn_hover.png");
+  }
+}

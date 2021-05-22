@@ -1,0 +1,69 @@
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 102px;
+    height: 66px;
+    border: none;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    background: url("../images/BTN_scroll_normal.png") 0 0 no-repeat;
+    transform: rotate(90deg);
+    left: 50px;
+    transition: .4s;
+}
+.slick-arrow.slick-prev:hover {
+    background: url("../images/BTN_scroll_hover.png") 0 0 no-repeat;
+}
+.slick-arrow.slick-prev:active {
+    background: url("../images/BTN_scroll_active.png") 0 0 no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    background: url("../images/BTN_scroll_normal.png") 0 0 no-repeat;
+    transform: rotate(-90deg);
+    right: 50px;
+    transition: .4s;
+}
+.slick-arrow.slick-next:hover {
+    background: url("../images/BTN_scroll_hover.png") 0 0 no-repeat;
+}
+.slick-arrow.slick-next:active {
+    background: url("../images/BTN_scroll_active.png") 0 0 no-repeat;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
